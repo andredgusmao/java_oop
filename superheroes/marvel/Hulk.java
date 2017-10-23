@@ -3,6 +3,9 @@ package marvel;
 import java.util.ArrayList;
 import java.util.List;
 
+import powers.Resistence;
+import powers.ShockWave;
+import powers.SuperStrength;
 import structure.Abilities;
 import structure.Character;
 import structure.Power;
@@ -19,10 +22,9 @@ public class Hulk extends Character {
 	
 	private List<Power> powers() {
 		ArrayList<Power> powers = new ArrayList<>();
-		powers.add(new Power("super strength"));
-		powers.add(new Power("leap great distances"));
-		powers.add(new Power("hands shock wave"));
-		powers.add(new Power("resistance to damage"));
+		powers.add(new SuperStrength());
+		powers.add(new ShockWave());
+		powers.add(new Resistence());
 		
 		return powers;
 	}

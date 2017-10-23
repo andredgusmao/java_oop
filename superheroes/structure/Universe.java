@@ -3,7 +3,7 @@ package structure;
 import java.util.List;
 import structure.Character;
 
-public class Universe {
+public abstract class Universe {
 	private String name; //DC, Marvel
 	private List<Character> superheroes;
 	

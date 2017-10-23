@@ -3,6 +3,9 @@ package marvel;
 import java.util.ArrayList;
 import java.util.List;
 
+import powers.SpiderSense;
+import powers.SuperAgility;
+import powers.SuperStrength;
 import structure.Abilities;
 import structure.Character;
 import structure.Power;
@@ -20,9 +23,9 @@ public class SpiderMan extends Character {
 	
 	private List<Power> powers() {
 		ArrayList<Power> powers = new ArrayList<>();
-		powers.add(new Power("spider-sense"));
-		powers.add(new Power("agility"));
-		powers.add(new Power("super strength"));
+		powers.add(new SpiderSense());
+		powers.add(new SuperAgility());
+		powers.add(new SuperStrength());
 		
 		return powers;
 	}
